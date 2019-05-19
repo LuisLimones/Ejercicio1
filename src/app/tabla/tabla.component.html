@@ -1,0 +1,26 @@
+<div class="container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Icono</th>
+          <th>Nombre</th>
+          <th>A. Paterno</th>
+          <th>A. Materno</th>
+          <th>Sexo</th>
+          <th>Edad</th>
+          <th>Correo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let per of personas">
+          <td><fa name="{{per.icono}}"></fa></td>
+          <td>{{per.nombre}}</td>
+          <td>{{per.apellidoP}}</td>
+          <td>{{per.apellidoM}}</td>
+          <td>{{per.sexo}}</td>
+          <td>{{per.edad}}</td>
+          <td>{{per.correo}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="row">
+    <h1>Introduzca sus datos</h1>
+  </div>
+  <div class="form-group">
+    <div class="row">
+      <label for="nombre">Nombre</label>
+      <input [(ngModel)]="persona.nombre" type="text" class="form-control" placeholder="Nombre">
+    </div>
+    <div class="row">
+      <label for="apellidoP">Apellido Paterno</label>
+      <input [(ngModel)]="persona.apellidoP" type="text" class="form-control" placeholder="Apellido Paterno">
+    </div>
+    <div class="row">
+      <label for="apellidoM">Apellido Materno</label>
+      <input [(ngModel)]="persona.apellidoM" type="text" class="form-control" placeholder="Apellido Materno">
+    </div>
+    <div class="row">
+      <label for="sexo">Sexo</label>
+      <select [(ngModel)]="persona.sexo" class="form-control">
+        <option value="Masculino">Masculino</option>
+        <option selected value="Femenino">Femenino</option>
+      </select>
+    </div>
+    <div class="row">
+        <label for="edad">Edad</label>
+        <input [(ngModel)]="persona.edad" type="text" class="form-control" placeholder="Edad">
+    </div>
+    <div class="row">
+        <label for="correo">Correo</label>
+        <input [(ngModel)]="persona.correo" type="text" class="form-control" placeholder="Correo">
+    </div>
+    <div class="row">
+      <a (click)="clickAgregar()"class="btn btn-primary" role="button">Agregar</a>
+    </div>
+  </div>
+</div>
+
+<app-tabla [personas]="personas"></app-tabla>
