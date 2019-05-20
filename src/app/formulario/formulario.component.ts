@@ -39,11 +39,9 @@ export class FormularioComponent implements OnInit {
     this.persona1.correo=this.persona.correo;
     this.persona1.icono=this.persona.icono;
     this.personas.push(this.persona1);
-    console.log(this.personas);
   }
   hacerRandom(){
     this.random=Math.floor(((Math.random()*10))+1);
-    console.log(this.random);
   }
 
 }
